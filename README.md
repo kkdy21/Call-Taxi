@@ -35,4 +35,6 @@ openAPi는 javascript형태로 제공되는것 뿐만아니라 Json, Xml형태�
 <img width="474" alt="image" src="https://user-images.githubusercontent.com/86215246/208296277-673f8546-0169-4348-83eb-bc501d34a4d3.png">
 <img width="474" alt="image" src="https://user-images.githubusercontent.com/86215246/208296285-628bf946-f483-4151-9a47-295893a54c6e.png">
 
+### 순서도
+![taxiFlowChart](https://user-images.githubusercontent.com/86215246/208296637-6ae7ec93-6443-433f-9a73-5493a5db7a2c.png)
 
