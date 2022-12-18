@@ -1,0 +1,50 @@
+create database TAXI;
+
+use TAXI;
+
+create table customer
+(
+CustomerID varchar(100) Primary Key,
+PW varchar(100),
+Name varchar(100),
+CallCount varchar(100),
+PaymentCount varchar(100),
+TotalPrice varchar(100)
+);
+
+create table usedlist
+(
+DriverID varchar(100),
+Time Datetime,
+Distance varchar(100),
+Price varchar(100),
+CustomerID varchar(100),
+From varchar(100),
+To varchar(100),
+foreign key(CustomerID) references customer(CustomerID) on update cascade on delete cascade
+);
+
+CREATE table driver
+(
+DriverID varchar(100) Primary Key,
+PW varchar(100),
+Name varchar(100),
+VehicleNumber varchar(100),
+DrivingCount varchar(100),
+TotalPrice varchar(100),
+Currentstate varchar(100)
+);
+
+create table calllist
+(
+Departure varchar(100), 
+Destination varchar(100),
+Status varchar(100),
+Review varchar(300),
+CustomerID varchar(100),
+DriverID varchar(100),
+TakingTime varchar(100),
+Distance varchar(100),
+Charge varchar(100),
+foreign key(CustomerID) references customer(CustomerID) on update cascade on delete cascade
+);
